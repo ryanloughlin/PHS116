@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadIdentifier</key>
+	<string>us.nh.k12.portsmouth.116loginitems</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadScope</key>
+	<string>User</string>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>d70b0580-1f7c-0134-77b4-3c075409fa49</string>
+	<key>PayloadOrganization</key>
+	<string>shadowfax.portsmouth.k12.nh.us</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+	<key>PayloadDisplayName</key>
+	<string>PHS 116 Login Items</string>
+	<key>PayloadContent</key>
+		<array>
+			<dict>
+			<key>PayloadType</key>
+			<string>loginwindow</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadUUID</key>
+			<string>6293d09a-4be5-8dcc-d462-52f36b83adb9</string>
+			<key>PayloadDisplayName</key>
+			<string>Login Items:  Network Share Point</string>
+			<key>DisableLoginItemsSuppression</key>
+			<false/>
+			<key>AutoLaunchedApplicationDictionary-managed</key>
+			<array>
+				<dict>
+				<key>AuthenticateAsLoginUserShortName</key>
+				<true/>
+				<key>MCX-NetworkHomeDirectoryItem</key>
+				<true/>
+				<key>Hide</key>
+				<false/>
+				</dict>
+			</array>
+			</dict>
+
+			<dict>
+			<key>PayloadType</key>
+			<string>com.apple.loginitems.managed</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+			<key>PayloadEnabled</key>
+			<true/>
+			<key>PayloadUUID</key>
+			<string>37d21c3f-b664-2e5e-01cf-3dcb8efaa8b9</string>
+			<key>PayloadDisplayName</key>
+			<string>Login Items:  Managed Items</string>
+			<key>AutoLaunchedApplicationDictionary-managed</key>
+			<array>
+				<dict>
+				<key>AuthenticateAsLoginUserShortName</key>
+				<true/>
+				<key>URL</key>
+				<string>smb://student/phspublic</string>
+				<key>Hide</key>
+				<false/>
+				</dict>
+			</array>
+			</dict>
+		</array>
+</dict>
+</plist>
