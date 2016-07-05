@@ -15,6 +15,9 @@
 # set to the path of dockutil
 dockutil="/usr/local/sbin/dockutil"
 
+#
+DIRECTORY="/Volumes/phspublic"
+
 # Checks to see if this is a lab admin
 is_teacher=$(dseditgroup -o checkmember -m $USER -L labadmin)
 
@@ -30,7 +33,7 @@ stApps=(
 	'/Applications/BlueJ 3.1.7/BlueJ.app'
 	'/Applications/Greenfoot 3.0.3/Greenfoot.app'
         '/Applications/Adobe Photoshop CS5.1/Adobe Photoshop CS5.1.app'
-        '/Applications/Adobe Illustrator CS5.1/Adobe Illustrator CS5.1.app'
+        '/Applications/Adobe Illustrator CS5.1/Adobe Illustrator.app'
         '/Applications/Adobe Flash CS5.5/Adobe Flash CS5.5.app'
         '/Applications/Adobe Fireworks CS5.1/Adobe Fireworks CS5.1.app'
         '/Applications/Adobe Dreamweaver CS5.5/Adobe Dreamweaver CS5.5.app'
@@ -77,6 +80,10 @@ done
 
 for i in "${!stVols[@]}"
 do
+if [ ! -d "$DIRECTORY" ]; then
+  mkdir /Volumes/phspublic
+  mount -t smbfs //student/phspublic /Volumes/phspublic
+fi
 ${dockutil} --add "${stVols[$i]}" --view list --display folder --no-restart
 done
 
