@@ -18,8 +18,8 @@ mv 116_loginitems.sh 116_dock.sh ROOT/usr/local/outset/login-once
 echo "Setting permissions..."
 chown -R root:wheel ROOT
 chmod -R 755 ROOT
-chmod a+x "ROOT/usr/local/outset/login-every/*"
-chmod a+x "ROOT/usr/local/outset/login-once/*"
+sudo chmod -R a+x "ROOT/usr/local/outset/login-every"
+sudo chmod -R a+x "ROOT/usr/local/outset/login-once"
 
 
 # Build the package
