@@ -75,26 +75,26 @@ sleep 2 # we add a delay so that the dock has time to inialize the removal
 
 for i in "${!stApps[@]}"
 do
-${dockutil} --add "${stApps[$i]}" --no-restart
+	${dockutil} --add "${stApps[$i]}" --no-restart
 done
 
 for i in "${!stVols[@]}"
 do
-if [ ! -d "$DIRECTORY" ]; then
-  mkdir /Volumes/phspublic
-  mount -t smbfs //student/phspublic /Volumes/phspublic
-fi
-${dockutil} --add "${stVols[$i]}" --view list --display folder --no-restart
+	if [ ! -d "$DIRECTORY" ]; then
+  		mkdir /Volumes/phspublic
+		mount -t smbfs //student/phspublic /Volumes/phspublic
+	fi
+	${dockutil} --add "${stVols[$i]}" --view list --display folder --no-restart
 done
 
 if [[ $is_teacher != *"NOT"* ]]; then
 	for i in "${!laApps[@]}"
 	do
-	${dockutil} --add "${laApps[$i]}" --view list --display folder --no-restart
+		${dockutil} --add "${laApps[$i]}" --view list --display folder --no-restart
 	done
 	for i in "${!laVols[@]}"
 	do
-	${dockutil} --add "${laVols[$i]}" --view list --display folder --no-restart
+		${dockutil} --add "${laVols[$i]}" --view list --display folder --no-restart
 	done
 fi
 
