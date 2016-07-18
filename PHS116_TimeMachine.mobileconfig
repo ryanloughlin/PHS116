@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadIdentifier</key>
+		<string>com.apple.mdm.shadowfax.portsmouth.k12.nh.us.bffa8580-24e7-0134-77b6-3c075409fa49.alacarte</string>
+	<key>PayloadRemovalDisallowed</key>
+		<false/>
+	<key>PayloadScope</key>
+		<string>System</string>
+	<key>PayloadType</key>
+		<string>Configuration</string>
+	<key>PayloadUUID</key>
+		<string>bffa8580-24e7-0134-77b6-3c075409fa49</string>
+	<key>PayloadOrganization</key>
+		<string>Portsmouth School Department</string>
+	<key>PayloadVersion</key>
+		<integer>1</integer>
+	<key>PayloadDisplayName</key>
+		<string>116 Time Machine Settings</string>
+	<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>PayloadType</key>
+					<string>com.apple.MCX.TimeMachine</string>
+				<key>PayloadVersion</key>
+					<integer>1</integer>
+				<key>PayloadIdentifier</key>
+					<string>us.nh.k12.portsmouth.timemachine.116</string>
+				<key>PayloadUUID</key>
+					<string>6482c040-2c0f-0134-77c0-3c075409fa49</string>
+				<key>PayloadEnabled</key>
+					<true/>
+				<key>PayloadDisplayName</key>
+					<string>Time Machine</string>
+				<key>BackupSkipSys</key>
+					<true/>
+				<key>SkipPaths</key>
+					<array>
+						<string>/Applications</string>
+						<string>/Library</string>
+						<string>/System</string>
+						<string>/Users/localadmin</string>
+						<string>/Users/Shared</string>
+						<string>/Users/psdguest</string>
+					</array>
+				<key>AutoBackup</key>
+					<true/>
+				<key>MobileBackups</key>
+					<true/>
+				<key>BackupDestURL</key>
+					<string>afp://barad-dur/phs/116</string>
+				<key>updated_at_xid</key>
+					<integer>1001031</integer>
+		</dict>
+	</array>
+</dict>
+</plist>
