@@ -10,7 +10,7 @@ mkdir -p ROOT/Library/Profiles
 
 # Move the files where they need to be
 echo "Moving files..."
-mv PHS116_loginitems.mobileconfig ROOT/Library/Profiles/
+mv *.mobileconfig ROOT/Library/Profiles/
 mv check_dev.sh ROOT/usr/local/outset/login-every
 mv 116_loginitems.sh 116_dock.sh 116_prefs.sh ROOT/usr/local/outset/login-once
 
